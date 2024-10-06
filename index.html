@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>テスト結果比較</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/script2.js" defer></script>
+
+</head>
+
+<body>
+  <h1>テスト結果比較</h1>
+  <h2>教科毎のテスト結果を入力後、平均点との比較・偏差値を確認できます。</h2>
+  <form id="scoreForm">
+    <label for="japanese">国語:</label>
+    <input type="number" id="japanese" name="japanese"><br>
+    <label for="math">数学:</label>
+    <input type="number" id="math" name="math"><br>
+    <label for="english">英語:</label>
+    <input type="number" id="english" name="english"><br><br>
+    <button type="button" onclick="compareScores()">平均点と比較・偏差値を確認</button><br><br>
+  </form>
+
+  <div id="resultTable"></div><br>
+  <canvas id="myChart" width="50" height="50"></canvas>
+</body>
+
+
+
+</html>
